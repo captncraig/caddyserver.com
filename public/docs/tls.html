@@ -61,14 +61,14 @@
 			<code class="block"><span class="hl-directive">tls</span> <span class="hl-arg"><i>cert key</i></span> {
     <span class="hl-subdirective">protocols</span> <i>min max</i>
     <span class="hl-subdirective">ciphers</span>   <i>ciphers...</i>
-    <span class="hl-subdirective">clients</span>   <i>clientcas...</i>
+    <span class="hl-subdirective">clients</span>   <i>clients...</i>
 }</code>
 
 			<ul>
 				<li><b>cert</b> and <b>key</b> are the same as above.</li>
 				<li><b>min</b> and <b>max</b> are the minimum and maximum protocol versions to support, respectively. See below for valid values.</li>
 				<li><b>ciphers...</b> is a list of space-separated ciphers that will be supported. If you list any, only the ones you specify will be allowed. See below for valid values.</li>
-				<li><b>clientcas...</b> is a list of space-separated client root CAs used for verification during TLS client authentication. If used, clients will be asked to present their certificate by their browser, which will be verified against this list of client certificate authorities. A client will not be allowed to connect if their certificate was not signed by one of these root CAs.</li>
+				<li><b>clients...</b> is a list of space-separated client root CAs used for verification during TLS client authentication. If used, clients will be asked to present their certificate by their browser, which will be verified against this list of client certificate authorities. A client will not be allowed to connect if their certificate was not signed by one of these root CAs.</li>
 			</ul>
 
 
